@@ -52,7 +52,9 @@ class SearchUserCoreForm
         $oForm->addElement(new \PFBC\Element\Checkbox(t('Looking for a:'), 'sex', ['female' => t('Woman'), 'male' => t('Man'), 'couple' => t('Couple')], self::$aMatchSexOption));
         $oForm->addElement(new \PFBC\Element\Age(self::$aAgeOption));
         $oForm->addElement(new \PFBC\Element\Country(t('Country:'), 'country', self::$aCountryOption));
+        /** Commented out City in Search
         $oForm->addElement(new \PFBC\Element\Textbox(t('City:'), 'city', self::$aCityOption));
+             */
         $oForm->addElement(new \PFBC\Element\Checkbox('', 'latest', array('1' => '<span class="bold">' . t('Latest members') . '</span>'), self::$aLatestOrder));
         $oForm->addElement(new \PFBC\Element\Checkbox('', 'avatar', array('1' => '<span class="bold">' . t('Only with Avatar') . '</span>'), self::$aAvatarOnly));
         $oForm->addElement(new \PFBC\Element\Checkbox('', 'online', array('1' => '<span class="bold green2">' . t('Only Online') . '</span>'), self::$aOnlineOnly));
@@ -81,7 +83,9 @@ class SearchUserCoreForm
         $oForm->addElement(new \PFBC\Element\Checkbox(t('Looking for:'), 'sex', array('female' => t('Woman'), 'male' => t('Male'), 'couple' => t('Couple')), self::$aMatchSexOption));
         $oForm->addElement(new \PFBC\Element\Age(self::$aAgeOption));
         $oForm->addElement(new \PFBC\Element\Country(t('Country:'), 'country', self::$aCountryOption));
+        /** Commented out City in Search
         $oForm->addElement(new \PFBC\Element\Textbox(t('City:'), 'city', self::$aCityOption));
+        */
         $oForm->addElement(new \PFBC\Element\Textbox(t('State/Province:'), 'state', self::$aStateOption));
         $oForm->addElement(new \PFBC\Element\Textbox(t('Postal Code:'), 'zip_code', array('id' => 'str_zip_code')));
         $oForm->addElement(new \PFBC\Element\Email(t('Email Address:'), 'mail'));
