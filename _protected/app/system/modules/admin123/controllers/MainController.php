@@ -98,12 +98,13 @@ class MainController extends Controller
         $this->view->login_female_members = $oStatModel->totalLogins(DbTableName::MEMBER, 0, 'female');
 
         // Couple Members
+        /**
         $this->view->today_login_couple_members = $oStatModel->totalLogins(DbTableName::MEMBER, 1, 'couple');
         $this->view->week_login_couple_members = $oStatModel->totalLogins(DbTableName::MEMBER, 7, 'couple');
         $this->view->month_login_couple_members = $oStatModel->totalLogins(DbTableName::MEMBER, 31, 'couple');
         $this->view->year_login_couple_members = $oStatModel->totalLogins(DbTableName::MEMBER, 365, 'couple');
         $this->view->login_couple_members = $oStatModel->totalLogins(DbTableName::MEMBER, 0, 'couple');
-
+*/
 
         //---------- Number of Logins Affiliates ----------//
 
@@ -177,12 +178,13 @@ class MainController extends Controller
         $this->view->total_female_members = $oStatModel->totalMembers(0, 'female');
 
         // Couple Members
+        /*
         $this->view->today_total_couple_members = $oStatModel->totalMembers(1, 'couple');
         $this->view->week_total_couple_members = $oStatModel->totalMembers(7, 'couple');
         $this->view->month_total_couple_members = $oStatModel->totalMembers(31, 'couple');
         $this->view->year_total_couple_members = $oStatModel->totalMembers(365, 'couple');
         $this->view->total_couple_members = $oStatModel->totalMembers(0, 'couple');
-
+*/
 
         //---------- Affiliates Registrations ----------//
 

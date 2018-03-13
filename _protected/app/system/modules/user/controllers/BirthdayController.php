@@ -89,7 +89,7 @@ class BirthdayController extends Controller
     {
         switch ($sSexType) {
             case BirthdayModel::ALL:
-            case BirthdayModel::COUPLE:
+          //  case BirthdayModel::COUPLE:
             case BirthdayModel::MALE:
             case BirthdayModel::FEMALE:
                 return $sSexType;

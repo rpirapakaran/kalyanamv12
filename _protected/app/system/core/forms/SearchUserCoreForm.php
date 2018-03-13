@@ -44,12 +44,12 @@ class SearchUserCoreForm
             self::setAttrVals();
         }
 
-        // Generate the Quick Search form
+        // Generate the Quick Search form Removed , 'couple' => t('Couple')
         $oForm = new \PFBC\Form('form_search', $iWidth);
         $oForm->configure(array('action' => Uri::get('user', 'browse', 'index') . PH7_SH, 'method' => 'get'));
         $oForm->addElement(new \PFBC\Element\Hidden('submit_search', 'form_search'));
-        $oForm->addElement(new \PFBC\Element\Select(t('I am a:'), 'match_sex', ['male' => t('Man'), 'female' => t('Woman'), 'couple' => t('Couple')], self::$aSexOption));
-        $oForm->addElement(new \PFBC\Element\Checkbox(t('Looking for a:'), 'sex', ['female' => t('Woman'), 'male' => t('Man'), 'couple' => t('Couple')], self::$aMatchSexOption));
+        $oForm->addElement(new \PFBC\Element\Select(t('I am a:'), 'match_sex', ['male' => t('Man'), 'female' => t('Woman')], self::$aSexOption));
+        $oForm->addElement(new \PFBC\Element\Checkbox(t('Looking for a:'), 'sex', ['female' => t('Woman'), 'male' => t('Man')], self::$aMatchSexOption));
         $oForm->addElement(new \PFBC\Element\Age(self::$aAgeOption));
         $oForm->addElement(new \PFBC\Element\Country(t('Country:'), 'country', self::$aCountryOption));
         /** Commented out City in Search
@@ -79,8 +79,8 @@ class SearchUserCoreForm
         $oForm = new \PFBC\Form('form_search', $iWidth);
         $oForm->configure(array('action' => Uri::get('user', 'browse', 'index') . PH7_SH, 'method' => 'get'));
         $oForm->addElement(new \PFBC\Element\Hidden('submit_search', 'form_search'));
-        $oForm->addElement(new \PFBC\Element\Select(t('I am a:'), 'match_sex', array('male' => t('Male'), 'female' => t('Woman'), 'couple' => t('Couple')), self::$aSexOption));
-        $oForm->addElement(new \PFBC\Element\Checkbox(t('Looking for:'), 'sex', array('female' => t('Woman'), 'male' => t('Male'), 'couple' => t('Couple')), self::$aMatchSexOption));
+        $oForm->addElement(new \PFBC\Element\Select(t('I am a:'), 'match_sex', array('male' => t('Male'), 'female' => t('Woman')), self::$aSexOption));
+        $oForm->addElement(new \PFBC\Element\Checkbox(t('Looking for:'), 'sex', array('female' => t('Woman'), 'male' => t('Male')), self::$aMatchSexOption));
         $oForm->addElement(new \PFBC\Element\Age(self::$aAgeOption));
         $oForm->addElement(new \PFBC\Element\Country(t('Country:'), 'country', self::$aCountryOption));
         /** Commented out City in Search
@@ -109,7 +109,7 @@ class SearchUserCoreForm
     protected static function getGenderVals(UserCoreModel $oUserModel, Session $oSession)
     {
         $sUserSex = 'male';
-        $aMatchSex = ['male', 'female', 'couple'];
+        $aMatchSex = ['male', 'female'];
 
         if (UserCore::auth()) {
             $sUserSex = $oUserModel->getSex($oSession->get('member_id'));

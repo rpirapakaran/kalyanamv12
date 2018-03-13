@@ -73,7 +73,7 @@ class ImportUser extends Core
     /**
      * @var array $aGenderList Gender types available for pH7CMS.
      */
-    private static $aGenderList = ['male', 'female', 'couple'];
+    private static $aGenderList = ['male', 'female'];
 
     /**
      * @param array $aFile

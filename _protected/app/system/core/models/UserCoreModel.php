@@ -167,7 +167,7 @@ class UserCoreModel extends Model
         $iDay = (int)$iDay;
 
         $bIsDay = ($iDay > 0);
-        $bIsGender = ($sTable === DbTableName::MEMBER ? ($sGender === 'male' || $sGender === 'female' || $sGender === 'couple') : ($sGender === 'male' || $sGender === 'female'));
+        $bIsGender = ($sTable === DbTableName::MEMBER ? ($sGender === 'male' || $sGender === 'female' ) : ($sGender === 'male' || $sGender === 'female'));
 
         $sSqlDay = $bIsDay ? ' AND (joinDate + INTERVAL :day DAY) > NOW()' : '';
         $sSqlGender = $bIsGender ? ' AND sex = :gender' : '';
@@ -355,10 +355,11 @@ class UserCoreModel extends Model
                 if ($sSex === 'female') {
                     $sGender .= '\'female\',';
                 }
-
+/*
                 if ($sSex === 'couple') {
                     $sGender .= '\'couple\',';
                 }
+                */
             }
 
             $sSqlSex = ' AND sex IN (' . rtrim($sGender, ',') . ') ';

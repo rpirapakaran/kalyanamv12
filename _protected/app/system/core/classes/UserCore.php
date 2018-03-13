@@ -527,7 +527,7 @@ class UserCore
      */
     public function getMatchSex($sSex)
     {
-        return ($sSex === 'male' ? 'female' : ($sSex === 'female' ? 'male' : 'couple'));
+        return ($sSex === 'male' ? 'female' : ($sSex === 'female' ? 'male' : 'male'));
     }
 
     /**

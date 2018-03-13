@@ -35,8 +35,8 @@ class AddUserForm
         $oForm->addElement(new \PFBC\Element\Textbox(t('First Name:'), 'first_name', array('required' => 1, 'validation' => new \PFBC\Validation\Name)));
         $oForm->addElement(new \PFBC\Element\Textbox(t('Last Name:'), 'last_name', array('required' => 1, 'validation' => new \PFBC\Validation\Name)));
         $oForm->addElement(new \PFBC\Element\Textbox(t('Middle Name:'), 'middle_name', array('validation' => new \PFBC\Validation\Name)));
-        $oForm->addElement(new \PFBC\Element\Radio(t('Gender:'), 'sex', array('female' => t('Woman'), 'male' => t('Man'), 'couple' => t('Couple')), array('value' => 'female', 'required' => 1)));
-        $oForm->addElement(new \PFBC\Element\Checkbox(t('Looking for:'), 'match_sex', array('male' => t('Man'), 'female' => t('Woman'), 'couple' => t('Couple')), array('value' => 'male', 'required' => 1)));
+        $oForm->addElement(new \PFBC\Element\Radio(t('Gender:'), 'sex', array('female' => t('Woman'), 'male' => t('Man')), array('value' => 'female', 'required' => 1)));
+        $oForm->addElement(new \PFBC\Element\Checkbox(t('Looking for:'), 'match_sex', array('male' => t('Man'), 'female' => t('Woman')), array('value' => 'male', 'required' => 1)));
         $oForm->addElement(new \PFBC\Element\Date(t('Date of birth:'), 'birth_date', array('title' => t('Please specify the birth date using the calendar.'), 'validation' => new \PFBC\Validation\BirthDate, 'required' => 1)));
         $oForm->addElement(new \PFBC\Element\Country(t('Country:'), 'country', array('id' => 'str_country', 'value' => Geo::getCountryCode(), 'required' => 1)));
         $oForm->addElement(new \PFBC\Element\Textbox(t('City:'), 'city', array('id' => 'str_city', 'validation' => new \PFBC\Validation\Str(2, 150), 'required' => 1)));
