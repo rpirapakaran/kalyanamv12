@@ -405,28 +405,27 @@ class Design
 
         // Default links, set to English
         $aSites = [
-            ['title' => 'Free Dating CMS', 'link' => Kernel::SOFTWARE_GIT_REPO],
-            ['title' => 'Flirt Hot Girls', 'link' => 'http://01script.com/p/dooba'],
-            ['title' => 'Romance Dating', 'link' => 'http://love-rencontre.wekiss.net'],
-            ['title' => 'Date your Friends', 'link' => 'http://01script.com/p/dooba']
+            ['title' => 'Prapa Matrimonial', 'link' => 'https://kalyanaporutham.com'],
+            ['title' => 'Prapa Matrimonial Dev', 'link' => 'https://dev.kalyanaporutham.com']
         ];
 
         if ($sLangCode === 'en-ie') {
-            $aSites[] = ['title' => 'FREE Flirt in Dublin City', 'link' => 'http://01script.com/p/dooba'];
-            $aSites[] = ['title' => 'Date Dubs in the Town!', 'link' => 'http://01script.com/p/dooba'];
+            $aSites[] = ['title' => 'Prapa Matrimonial', 'link' => 'https://kalyanaporutham.com'];
+            $aSites[] = ['title' => 'Prapa Matrimonial Dev!', 'link' => 'https://dev.kalyanaporutham.com'];
         } elseif ($sLangCode === 'en-gb') {
-            $aSites[] = ['title' => 'Date Brits near from YOU', 'link' => 'http://01script.com/p/dooba'];
-            $aSites[] = ['title' => 'Date Londoners', 'link' => 'http://01script.com/p/dooba'];
+            $aSites[] = ['title' => 'Prapa Matrimonial', 'link' => 'https://kalyanaporutham.com'];
+            $aSites[] = ['title' => 'Prapa Matrimonial Dev', 'link' => 'https://dev.kalyanaporutham.com'];
         } elseif (strpos($sLangCode, 'fr') !== false) {
             /**
              * Reset the array since we don't want to mix it up with different langs (default one is English, not French)
              */
             $aSites = [
-                ['title' => 'Rencontre d\'un soir', 'link' => 'http://01script.com/p/dooba'],
-                ['title' => 'Flirt Coquin', 'link' => 'http://01script.com/p/dooba'],
-                ['title' => 'Rencontre amoureuse', 'link' => 'http://love-rencontre.wekiss.net']
+                ['title' => 'Prapa Matrimonial Dev', 'link' => 'https://dev.kalyanaporutham.com'],
+                ['title' => 'Prapa Matrimonial Dev', 'link' => 'https://dev.kalyanaporutham.com'],
+                ['title' => 'Prapa Matrimonial Dev', 'link' => 'https://dev.kalyanaporutham.com']
             ];
         }
+    
 
         $iRand = mt_rand(0, count($aSites) - 1);
         echo '<a href="', $aSites[$iRand]['link'], '">', $aSites[$iRand]['title'], '</a>';
