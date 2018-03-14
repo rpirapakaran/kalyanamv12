@@ -3,10 +3,6 @@
 <url>
     <link title="{lang 'About %site_name%'}" url="{{ $design->url('page','main','index') }}" />
 
-    {if $is_webcam_enabled}
-        <link title="{lang 'Webcam Picture Party Fun'}" url="{{ $design->url('webcam','webcam','picture') }}" />
-    {/if}
-
     {if $is_forum_enabled}
         <link title="{lang 'Discussion Forums'}" url="{{ $design->url('forum','forum','index') }}" />
     {/if}
@@ -19,13 +15,6 @@
         <link title="{lang 'Videos Movie'}" url="{{ $design->url('video','main','index') }}" />
     {/if}
 
-    {if $is_chat_enabled}
-        <link title="{lang 'Chat Rooms'}" url="{{ $design->url('chat','home','index') }}" />
-    {/if}
-
-    {if $is_chatroulette_enabled}
-        <link title="{lang 'Free Chatroulette Speed Dating'}" url="{{ $design->url('chatroulette','home','index') }}" />
-    {/if}
 
     {if $is_blog_enabled}
         <link title="{lang 'Blog'}" url="{{ $design->url('blog','main','index') }}" />
@@ -35,9 +24,6 @@
         <link title="{lang 'Community Notes'}" url="{{ $design->url('note','main','index') }}" />
     {/if}
 
-    {if $is_game_enabled}
-        <link title="{lang 'Games Zone Party'}" url="{{ $design->url('game','main','index') }}" />
-    {/if}
 
     <link title="{lang 'Users Birthday'}" url="{{ $design->url('user','birthday','index') }}" />
     <link title="{lang 'About Us'}" url="{{ $design->url('page','main','about') }}" />
