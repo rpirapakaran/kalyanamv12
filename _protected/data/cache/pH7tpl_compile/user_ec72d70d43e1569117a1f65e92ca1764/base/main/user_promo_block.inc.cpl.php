@@ -16,4 +16,4 @@ Template Engine: PH7Tpl version 1.3.0 by Pierre-Henry Soria
  * @copyright  (c) 2011-2018, Pierre-Henry Soria. All Rights Reserved.
  * @license    Creative Commons Attribution 3.0 License - http://creativecommons.org/licenses/by/3.0/
  ***************************************************************************/
-?><h1 class="red3 italic underline s_bMarg"><?php echo $slogan; ?></h1><?php if($is_users_block) { ?> <div class="center profiles_window thumb pic_block"> <?php $userDesignModel->profiles(0, $number_profiles) ;?> </div><?php } ?><div class="s_tMarg" id="promo_text"> <h2><?php echo t('Meet &amp; date amazing people near %0%!', $design->geoIp(false)); ?></h2> <?php echo $promo_text; ?></div>
+?><h1 class="red3 italic underline s_bMarg"><?php echo $slogan; ?></h1><?php if($is_users_block) { ?> <div class="center profiles_window thumb pic_block"> <?php $userDesignModel->profiles(0, $number_profiles) ;?> </div><?php } ?><div class="s_tMarg" id="promo_text"> <h2><?php echo t('Meet &amp; your soulmate near %0%!', $design->geoIp(false)); ?></h2> <?php echo $promo_text; ?></div>
