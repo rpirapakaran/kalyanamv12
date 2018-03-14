@@ -20,9 +20,9 @@
         <div class="splash_slideshow">
             <div class="window">
                 <div class="img_reel">
-                    {for $i in [1,2,3,4,5]}
+                    {for $i in [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]}
                         <a href="{url_root}">
-                            <img src="{url_tpl_img}slideshow/{i}.jpg" alt="{lang 'Social Dating Web App'}" />
+                            <img src="{url_tpl_img}slideshow/{i}.jpg" alt="{lang 'Prapa Matrimonial Web App'}" />
                         </a>
                     {/for}
                 </div>
@@ -33,12 +33,24 @@
                 <a href="#" rel="3">3</a>
                 <a href="#" rel="4">4</a>
                 <a href="#" rel="5">5</a>
+                
+                <a href="#" rel="6">6</a>
+                <a href="#" rel="7">7</a>
+                <a href="#" rel="8">8</a>
+                <a href="#" rel="9">9</a>
+                <a href="#" rel="10">10</a>
+                
+                <a href="#" rel="11">11</a>
+                <a href="#" rel="12">12</a>
+                <a href="#" rel="13">13</a>
+                <a href="#" rel="14">14</a>
+                <a href="#" rel="15">15</a>
             </div>
         </div>
     </div>
 
     <div class="block_txt">
-        <h2>{lang 'Meet &amp; date amazing people near %0%!', $design->geoIp(false)}</h2>
+        <h2>{lang 'Meet &amp; your soulmate near %0%!', $design->geoIp(false)}</h2>
         {promo_text}
     </div>
 
