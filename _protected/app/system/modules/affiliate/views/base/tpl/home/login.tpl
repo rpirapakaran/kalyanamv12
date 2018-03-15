@@ -1,5 +1,5 @@
 <p>
-    {lang 'Not yet registered on our affiliate program?'}<br />
+    {lang 'Not yet registered on our Marriage Broker program?'}<br />
     <strong><a href="{{ $design->url('affiliate','signup','step1') }}">{lang 'Join TODAY'}</a></strong> {lang 'and start making money!'}
 </p>
 

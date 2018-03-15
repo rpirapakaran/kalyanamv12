@@ -3784,21 +3784,21 @@ msgid "Banners"
 msgstr ""
 
 #: _protected/app/system/modules/affiliate/controllers/HomeController.php:20
-msgid "Become an Affiliate with the dating affiliate program of %site_name%"
+msgid "Become a Marriage Broker with the Prapa matrimonial Marriage Broker program of %site_name%"
 msgstr ""
 
 #: _protected/app/system/modules/affiliate/controllers/HomeController.php:21
 msgid ""
-"affiliate,dating,dating site,social network,pay per click affiliate program, "
-"affiliate program"
+"affiliate,dating,dating site,social network,pay per click Marriage Broker program, "
+"Marriage Broker program"
 msgstr ""
 
 #: _protected/app/system/modules/affiliate/controllers/HomeController.php:26
-msgid "Affiliate Program with %site_name%! Dating Social Affiliate"
+msgid "Marriage Broker Program with %site_name%! Dating Social Affiliate"
 msgstr ""
 
 #: _protected/app/system/modules/affiliate/controllers/HomeController.php:27
-msgid "Affiliate Program - %site_name%"
+msgid "Marriage Broker Program - %site_name%"
 msgstr ""
 
 #: _protected/app/system/modules/affiliate/controllers/HomeController.php:30
@@ -3951,7 +3951,7 @@ msgstr ""
 
 #: _protected/app/system/modules/affiliate/forms/JoinForm.php:72
 #, fuzzy
-msgid "Become an Affiliate!"
+msgid "Become a Marriage Broker!"
 msgstr "Search a Subscriber:"
 
 #: _protected/app/system/modules/affiliate/forms/SearchAffiliateForm.php:20
@@ -8077,17 +8077,17 @@ msgstr ""
 
 #: _protected/data/cache/pH7tpl_compile/affiliate_2015fd8d22111a7fa42e3e226d13e530/base/home/index.cpl.php:19
 #, fuzzy
-msgid "Make Money with our Affiliate Program!"
+msgid "Make Money with our Marriage Broker Program!"
 msgstr "Search a Subscriber:"
 
 #: _protected/data/cache/pH7tpl_compile/affiliate_2015fd8d22111a7fa42e3e226d13e530/base/home/index.cpl.php:19
 msgid ""
-"Our affiliate program offers one of the highest payment rates on the market"
+"Our Marriage Broker program offers one of the highest payment rates on the market"
 msgstr ""
 
 #: _protected/data/cache/pH7tpl_compile/affiliate_2015fd8d22111a7fa42e3e226d13e530/base/home/index.cpl.php:19
 #, fuzzy
-msgid "Welcome to our Affiliate Program!"
+msgid "Welcome to our Marriage Broker Program!"
 msgstr "Search a Subscriber:"
 
 #: _protected/data/cache/pH7tpl_compile/affiliate_2015fd8d22111a7fa42e3e226d13e530/base/homelogin.inc.cpl.php:19
@@ -8666,7 +8666,7 @@ msgstr ""
 
 #: _protected/data/cache/pH7tpl_compile/public_main/base/bottom_menu.inc.cpl.php:19
 #, fuzzy
-msgid "Become an Affiliate"
+msgid "Become a Marriage Broker"
 msgstr "Search a Subscriber:"
 
 #: _protected/data/cache/pH7tpl_compile/public_main/base/bottom_menu.inc.cpl.php:19

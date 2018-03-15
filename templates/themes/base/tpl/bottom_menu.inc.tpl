@@ -12,7 +12,7 @@
           {/if}
 
           {if $is_affiliate_enabled}
-            <li><a href="{{ $design->url('affiliate','home','index') }}" title="{lang 'Become an Affiliate'}">{lang 'Affiliate'}</a></li>
+            <li><a href="{{ $design->url('affiliate','home','index') }}" title="{lang 'Become a Marriage Broker'}">{lang 'Affiliate'}</a></li>
           {/if}
 
           <li><a href="{{ $design->url('contact','contact','index') }}" title="{lang 'Contact Us'}">{lang 'Contact'}</a></li>

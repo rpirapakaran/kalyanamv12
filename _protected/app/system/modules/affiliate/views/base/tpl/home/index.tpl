@@ -8,9 +8,9 @@
 
     <div class="left col-md-6">
         <h1 class="pink2 italic underline">
-            {lang 'Make Money with our Affiliate Program!'}
+            {lang 'Make Money with our Marriage Broker Program!'}
         </h1>
-        <h3>{lang 'Our affiliate program offers one of the highest payment rates on the market'}</h3>
+        <h3>{lang 'Our Marriage Broker program offers one of the highest payment rates on the market'}</h3>
 
         <div id="make_money"></div>
 
@@ -19,7 +19,7 @@
 {else}
     <div class="center">
         <h2 class="pink2 italic">
-            {lang 'Welcome to our Affiliate Program!'}
+            {lang 'Welcome to our Marriage Broker Program!'}
         </h2>
     </div>
 {/if}
